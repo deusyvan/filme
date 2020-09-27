@@ -5,7 +5,7 @@ export default () => {
   return (
     <>
         <View>
-            <Text></Text>
+            <Text>Filmes Populares</Text>
         </View>
     </>
   )

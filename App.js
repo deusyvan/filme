@@ -5,6 +5,7 @@ import Home from './src/screens/exemplos/Home';
 import Pagina1 from './src/screens/exemplos/Pagina1';
 import Pagina2 from './src/screens/exemplos/Pagina2';
 import Pagina3 from './src/screens/exemplos/Pagina3';
+import FilmesPopulares from './src/screens/filmes/FilmesPopulares';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ export default function App() {
         <Stack.Screen name="p1" component={Pagina1} />
         <Stack.Screen name="p2" component={Pagina2} />
         <Stack.Screen name="p3" component={Pagina3} />
+        <Stack.Screen name="filmes/populares" component={FilmesPopulares} />
       </Stack.Navigator>
     </NavigationContainer>
   );
