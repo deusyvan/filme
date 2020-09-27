@@ -25,4 +25,18 @@ npm install react-native-responsive-grid
 
 //Verificar comandos que o terminal solicitar: tipo Atualizaçao de pacote: "yarn" ou instalar "npm install -g npm"
 
+/** AULA 2**/
+1 - Criar uma conta no site themoviedb.org
+2 - Após criar a conta, gerem uma API_KEY no site, pelo caminho: Perfil -> Configurações -> API
+3 - Preencher o cadastro do aplicativo
+4 - Uri: http://localhost:19002
+5 - Escolher a opçao "Development"
+
+****************Instalar biblioteca axios*******************
+npm i axios
+via yarn:
+"yarn add axios"
+
+
+
 
