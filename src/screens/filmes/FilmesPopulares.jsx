@@ -10,7 +10,7 @@ const filmes = ['Filme 1', 'Filme 2','Filme 3']
         <View>
             <Text>Filmes Populares</Text>
             {filmes.map(item => (
-                
+                <Text>item</Text>
             ))}
         </View>
     </>
