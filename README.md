@@ -36,6 +36,11 @@ npm install react-native-responsive-grid
 npm i axios
 via yarn:
 "yarn add axios"
+Biblioteca que faz requisições HTTP (existesm outras como o FAT)
+
+*************************************************************
+
+
 
 
 
