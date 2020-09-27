@@ -3,14 +3,19 @@ import { View, Text } from 'react-native';
 
 export default () => {
 
-const filmes = ['Filme 1', 'Filme 2','Filme 3']
+const filmes = [
+    {id:1, title:'Rambo'},
+    {id:2, title:'Efeito Borboleto'},
+    {id:3, title:'A Origem'},
+    {id:4, title:'Matrix'},
+    {id:5, title:'Titanic'},
+]
 
   return (
     <>
         <View>
-            <Text>Filmes Populares</Text>
             {filmes.map(item => (
-                <Text>item</Text>
+            <Text key={item.id}>{item.title}</Text>
             ))}
         </View>
     </>
