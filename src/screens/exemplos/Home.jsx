@@ -10,6 +10,7 @@ export default ({navigation}) => {
       
       <Text>Bem vindo a Home</Text>
       <Button onPress={()=>navigation.navigate('p1')} >Ir Para a Página 1</Button>
+      <Button onPress={()=>navigation.navigate('filmes/populares')} >Ir Para Filmes Populares</Button>
     </View>
     </>
   )
