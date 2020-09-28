@@ -1,23 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
 import apiFilmes from '../../services/apiFilmes';
 
 export default () => {
 
-const filmes = [
-    {id:1, title:'Rambo'},
-    {id:2, title:'Efeito Borboleto'},
-    {id:3, title:'A Origem'},
-    {id:4, title:'Matrix'},
-    {id:5, title:'Titanic'},
-    {id:6, title:'E o Vento Levou'},
-]
+//Criando variavel filmes usando os estados
+const [filmes, setFilmes] = useState([])
 
-    useEffect(()=>{
+//Ao carregar a página ele chama useEffect
+useEffect(()=>{
 
-        const results = apiFilmes.get('movie/popular')
-
-    }, [])
+    //Chamando a apiFilmes pegando o filmes populares
+    apiFilmes.get('movie/popular').then(results =>{
+        setFilmes(results.data.results)
+    })
+}, [])
 
 
   return (
