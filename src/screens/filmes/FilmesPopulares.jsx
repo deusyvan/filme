@@ -23,15 +23,13 @@ useEffect(()=>{
         <View>
             {filmes.map(item => (
                 <Card key={item.id}>
-                    <Card.Title title="Card Title" subtitle="Card Subtitle" />
+                    <Card.Cover source={{ uri: 'https://image.tmdb.org/t/p/w500/' + item.backdrop_path }} />
                     <Card.Content>
-                        <Title>Card title</Title>
-                        <Paragraph>Card content</Paragraph>
+                        <Title>{item.title}</Title>
+                        <Paragraph>{item.overview}</Paragraph>
                     </Card.Content>
-                    <Card.Cover source={{ uri: 'https://picsum.photos/700' }} />
                     <Card.Actions>
-                        <Button>Cancel</Button>
-                        <Button>Ok</Button>
+                        <Button>Ver mais</Button>
                     </Card.Actions>
                 </Card>
             ))}
