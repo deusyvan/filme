@@ -12,7 +12,7 @@ const [filmes, setFilmes] = useState([])
 useEffect(()=>{
 
     //Chamando a apiFilmes pegando o filmes populares
-    apiFilmes.get('movie/popular').then(results =>{
+    apiFilmes.get('movie/popular?language=pt-BR').then(results =>{
         setFilmes(results.data.results)
     })
 }, [])
