@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import apiFilmes from '../../services/apiFilmes';
 import { Card, Title, Paragraph, Button } from 'react-native-paper';
 
@@ -20,7 +20,7 @@ useEffect(()=>{
 
   return (
     <>
-        <View>
+        <ScrollView>
             {filmes.map(item => (
                 <Card key={item.id}>
                     <Card.Cover source={{ uri: 'https://image.tmdb.org/t/p/w500/' + item.backdrop_path }} />
@@ -33,7 +33,7 @@ useEffect(()=>{
                     </Card.Actions>
                 </Card>
             ))}
-        </View>
+        </ScrollView>
     </>
   )
 }
