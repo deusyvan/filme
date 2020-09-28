@@ -39,7 +39,11 @@ via yarn:
 Biblioteca que faz requisições HTTP (existesm outras como o FAT)
 
 *************************************************************
+Usando hooks useEffect: quando a página abrir ele roda o que tive chamando 
+ 
+useEffect(()=>{
 
+    }, [])
 
 
 

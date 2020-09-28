@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { View, Text } from 'react-native';
+import apiFilmes from '../../services/apiFilmes';
 
 export default () => {
 
@@ -13,7 +14,9 @@ const filmes = [
 ]
 
     useEffect(()=>{
-        
+
+        const results = apiFilmes.get('movie/popular')
+
     }, [])
 
 
